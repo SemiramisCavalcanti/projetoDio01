@@ -1,17 +1,46 @@
+:root {
+    /* variaveis */
+    --vermelho: #ea0000;
+    --preto: #000;
+    --branco: #aaa;
 
-:root{
-    /* azul
-    preto 
-        **
-    */
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
 
+header .container {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+
+}
+
+header nav a:hover {
+    color: var(--vermelho);
+}
